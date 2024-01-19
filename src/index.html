@@ -10,7 +10,7 @@
 
 <body>
     <!-- Dialog Player Input -->
-    <dialog id="player-dialog" class="border border-black my-[50%] rounded-lg">
+    <dialog id="player-dialog" class="border border-black my-[25%] rounded-lg">
         <!-- Player Title Div -->
         <div class="p-5 border border-black m-5 flex justify-center">
             <h1>Player Input Form</h1>
@@ -28,21 +28,27 @@
                                 <h1>Player #1</h1>
                             </div>
                             <!-- Name Input field -->
-                            <div class="p-5">
+                            <div class="p-5 space-x-2">
                                 <label for="player-one-name" id="player-one-name">Player #1 Name</label>
-                                <input type="text" class="p-2 rounded-lg border border-gray-200 focus:outline-orange-400">
+                                <input type="text"
+                                    class="p-2 rounded-lg border border-gray-200 focus:outline-orange-400">
                             </div>
                             <!-- Player mark container -->
-                            <div>
+                            <div class="flex justify-center space-x-10">
                                 <!-- Player mark selection container -->
-                                <div>
-                                    <label for="">
-                                        <img src="" alt="">
+
+                                <label for="" class="flex flex-col space-y-2">
+                                    <img src="/img/icons8-o-100.png" alt="">
+                                    <input type="radio" name="" id="">
+                                </label>
+
+                                <!-- Player mark selection container -->
+                                <div class="border border-black m-5 rounded-full p-5">
+                                    <label for="" class="flex flex-col space-y-2">
+                                        <img src="/img/icons8-x-100.png" alt="">
+                                        <input type="radio">
                                     </label>
-                                    <label for=""></label>
                                 </div>
-                                <!-- Player mark selection container -->
-                                <div></div>
                             </div>
                         </div>
                         <!-- Border -->
@@ -54,9 +60,10 @@
                                 <h1>Player #2</h1>
                             </div>
                             <!-- Name Input field -->
-                            <div class="p-5">
+                            <div class="p-5 space-x-2">
                                 <label for="player-two-name" id="player-two-name">Player #2 Name</label>
-                                <input type="text" class="p-2 rounded-lg border border-gray-200 focus:outline-orange-400">
+                                <input type="text"
+                                    class="p-2 rounded-lg border border-gray-200 focus:outline-orange-400">
                             </div>
                             <!-- Player mark container -->
                             <div>
