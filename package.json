@@ -7,7 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tailwindcss -i src/styles.css -o public/styles.css",
     "watch": "tailwindcss -i src/styles.css -o public/styles.css --watch"
-
   },
   "keywords": [],
   "author": "",
