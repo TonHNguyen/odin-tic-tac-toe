@@ -1,3 +1,9 @@
+//Create Variables
+const dialog = document.getElementById('welcome-dialog');
+const submitButton = document.getElementById('dialog-submit-button');
+const firstUserName = document.getElementById('first-user-name');
+const secondUserName = document.getElementById('second-user-name');
+
 const gameBoardFactory = () => {
     let board = [['', '', ''], ['', '', ''], ['', '', '']];
 
@@ -20,19 +26,29 @@ const playerFactory = (name, mark) => {
     return player;
 };
 
-function getPlayerData(player) {
-    playerName = player.name;
-    playerMark = player.mark;
-    console.log(playerName);
-    console.log(playerMark);
+
+
+function createPlayer(firstName, secondName) {
+    const player1 = playerFactory(firstName, 'X');
+    const player2 = playerFactory(secondName, 'O');
+    // console.log(player1, player2);
+}
+
+submitButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    dialog.close();
+    const firstPlayerName = firstUserName.value;
+    const secondPlayerName = secondUserName.value;
+    createPlayer(firstPlayerName, secondPlayerName);
+});
+
+function loadDialog() {
+    dialog.showModal();
 };
 
-// let namePlayer = prompt('Please enter your name: ');
-// let markPlayer = prompt('Please type either "x" or "o" mark for your move');
-// let player1 = playerFactory(namePlayer, markPlayer);
-// console.log(player1);
-
-let gameBoard = gameBoardFactory();
+window.onload = function() {
+    loadDialog();
+};
 
 
 // let move1 = playerMove(1, 0, 'x');
@@ -46,3 +62,10 @@ let gameBoard = gameBoardFactory();
 // const testCell1 = getBoard.setCell(1, 1, 'x');
 // const testCell2= getBoard.setCell(1, 2, 'x');
 // console.log(getBoard.getBoard())
+
+// function getPlayerData(player) {
+//     playerName = player.name;
+//     playerMark = player.mark;
+//     console.log(playerName);
+//     console.log(playerMark);
+// };
