@@ -566,10 +566,6 @@ video {
   border-radius: 0.75rem;
 }
 
-.rounded-sm {
-  border-radius: 0.125rem;
-}
-
 .border {
   border-width: 1px;
 }
@@ -589,17 +585,12 @@ video {
   background-color: rgb(34 197 94 / var(--tw-bg-opacity));
 }
 
-.p-5 {
-  padding: 1.25rem;
-}
-
 .p-2 {
   padding: 0.5rem;
 }
 
-.text-green-400 {
-  --tw-text-opacity: 1;
-  color: rgb(74 222 128 / var(--tw-text-opacity));
+.p-5 {
+  padding: 1.25rem;
 }
 
 .text-white {
