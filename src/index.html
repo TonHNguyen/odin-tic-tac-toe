@@ -3,18 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/styles.css">
     <title>Document</title>
 </head>
 <body>
     <!-- Welcome box pop up with the input of users -->
-    <div>
-        <!-- Top box message welcoming user to the game -->
-        <div></div>
-        <!-- Bottom box with user name input and player's marks selection -->
-        <dialog>
-
-        </dialog>
-    </div>
+    <dialog id="welcome-dialog" class="space-y-5">
+        <!-- Top box welcoming user to the game -->
+        <div class="border border-black rounded-lg p-5">
+            <div>
+                <h1>Welcome to Tic-Tac-Toe game!</h1>
+            </div>
+        </div>
+        <!-- Bottom box for user to input their name and mark of choice -->
+         <div class="border border-black rounded-lg p-5">
+            <!-- header asking user to input their info -->
+            <div class="border border-black">
+                <h1>Please input your info!</h1>
+            </div>
+            <!-- user's form -->
+            <div>
+                <form class="border border-black">
+                    <label for="first-user-name">First player enter name here: </label>
+                    <input type="text" name="first-user-name" placeholder="Name here: " id="first-user-name"
+                    class="border border-gray-200 p-2 rounded-xl">
+                    <label for="second-user-name">Second player enter name here: </label>
+                    <input type="text" name="second-user-name" placeholder="Name here: " id="second-user-name"
+                    class="border border-gray-200 p-2 rounded-xl">
+                    <div>
+                        <button id="dialog-submit-button" class="w-20 h-10 bg-green-500 text-white rounded-lg">SUBMIT</button>
+                    </div>
+                </form>
+            </div>
+         </div>
+    </dialog>
 
     <script src="script.js"></script>
 </body>
